@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharp Cut Editz</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-weight:700;
+    font-size:22px;
+    color:#00ffcc;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffcc;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#ccc;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 30px;
+    background:#00ffcc;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:32px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#222;
+}
+
+.portfolio iframe{
+    width:100%;
+    height:250px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#777;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Sharp Cut Editz</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>We Turn Raw Footage Into Scroll-Stopping Content</h1>
+    <p>Professional Video Editing for Creators & Brands</p>
+    <a href="#contact" class="btn">Get Started</a>
+</div>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Short Form Editing</h3>
+            <p>High-retention Reels, Shorts & TikTok edits.</p>
+        </div>
+        <div class="card">
+            <h3>YouTube Editing</h3>
+            <p>Engaging long-form content with smooth storytelling.</p>
+        </div>
+        <div class="card">
+            <h3>Motion Graphics</h3>
+            <p>Captions, transitions & dynamic animations.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">Our Work</h2>
+    <div class="portfolio">
+        <!-- Replace VIDEO_ID with your YouTube video ID -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+        <p>Email: editzsharpcut@gmail.com</p>
+        <p>Instagram: @sharp.cut.editz</p>
+        <br>
+        <a href="mailto:editzsharpcut@gmail.com" class="btn">Send Email</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sharp Cut Editz | All Rights Reserved
+</footer>
+
+</body>
+</html>
